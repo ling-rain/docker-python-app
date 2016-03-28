@@ -22,4 +22,7 @@ docker-compose up -d
 docker -H :3375 run -dit -P --name redis -h redis -p 6379:6379 --net=webapp redis
 docker -H :3375 run -tid -P -p 5000:5000 --link redis --net=webapp kamigerami/python-app
 ```
+
+<img src="https://raw.githubusercontent.com/kamigerami/assets/master/docker-python-app.url.png" width="512">
+
 go to your host on port :5000

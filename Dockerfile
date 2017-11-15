@@ -6,5 +6,5 @@ WORKDIR /code
 RUN apk-install python \
     python-dev \
     py-pip &&\
-    pip install -i http://e.pypi.python.org/simple -r requirements.txt
+    pip install --trusted-host e.pypi.python.org -i http://e.pypi.python.org/simple -r requirements.txt
 CMD ["python", "app.py"]

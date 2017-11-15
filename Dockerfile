@@ -6,5 +6,5 @@ WORKDIR /code
 RUN apk-install python \
     python-dev \
     py-pip &&\
-    pip install -r requirements.txt
+    pip install -i http://e.pypi.python.org/simple -r requirements.txt
 CMD ["python", "app.py"]
